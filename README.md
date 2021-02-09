@@ -14,5 +14,5 @@ Minden eszköz a használata előtt kerül bemutatásra.
 
 ## Felhasznált források
 
-* Scott Chacon and Ben Straub. 2014. Pro Git (2nd. ed.). Apress, USA.
-* Learn Git Branching, [link](https://learngitbranching.js.org/).
+1. ScottChacon and Ben Straub. 2014. Pro Git (2nd. ed.). Apress, USA.
+2. Learn Git Branching, [link](https://learngitbranching.js.org/).
