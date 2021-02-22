@@ -266,4 +266,95 @@ Commitoljuk be a hozzáadott módosítást a `git commit -m "Második commit."` 
 
 ## History
 
+Most, hogy már van két commit a projektben, nézzük őket vissza.
+A `git log` parancs már volt említve, most részletesen is bemutatásra kerül.
+
+```bash
+commit 2bfb2ec1b436ef41a3f8e269a70d099a46c1e502 (HEAD -> master)
+Author: Felhasználó Név <email@cím.hu>
+Date:   Thu Feb 11 20:46:59 2021 +0100
+
+    Második commit.
+
+commit 81f766da144b96ae43d17ad5f447eb0c400d3f39
+Author: Felhasználó Név <email@cím.hu>
+Date:   Thu Feb 11 19:32:16 2021 +0100
+
+    Első commit.
+```
+
+Az olvasás alulról felfelé történik, a legutoljára létrehozott commit a legfelső.
+A felső commit -- `2bfb2e` -- szülője a `81f766` hashű commit, az pedig első entitás lévén szülő nélkülinek tekintendő.
+Az első sor végén még látható egy zárójelpár: `(HEAD -> master)`.
+A `HEAD` jelzi, hogy jelen állapotban hol állunk (commit `2bfb2e`) és ez megegyezik a `master` branchel.
+A `--patch` kapcsoló hozzáadásával a fenti információ mellé még a commitokban tárolt változásokat is láthatjuk.
+
+Ha csak azt szeretnénk látni, hogy egy-egy commit milyen fájlokat változtatott általánosan, akkor a `--stat` parancsot használhatjuk.
+
+```bash
+commit 2bfb2ec1b436ef41a3f8e269a70d099a46c1e502 (HEAD -> master)
+Author: Felhasználó Név <email@cím.hu>
+Date:   Thu Feb 11 20:46:59 2021 +0100
+
+    Második commit.
+
+ 01-pelda.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 81f766da144b96ae43d17ad5f447eb0c400d3f39
+Author: Felhasználó Név <email@cím.hu>
+Date:   Thu Feb 11 19:32:16 2021 +0100
+
+    Első commit.
+
+ 01-pelda.txt | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+```
+
+Látható, hogy hány fájl változott, azon belül is hány sor lett hozzáadva és törölve.
+
+Két commit vizsgálata közben átlátható ez a forma, viszont több esetében már nehézkes lehet keresni követni.
+Formázható a log kimenete a `--pretty=format:` vagy `--format=format:` kapcsolóval.
+A `--graph` kapcsoló ezen felül szöveges gráf formátumban reprezentálja a logot.
+
+```bash
+$ git log --pretty=format:"%h %s" --graph
+* 2bfb2ec Második commit.
+* 81f766d Első commit.
+```
+
+Személy szerint, amit sűrűn használok az a következő:
+
+```bash
+$ git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+* 2bfb2ec - (11 days ago) Második commit. - Felhasználó Név (HEAD -> master)
+* 81f766d - (11 days ago) Első commit. - Felhasználó Név
+```
+
+Ebben a formában látható, hogy mikor követték el a commitot, ki tette és a branchek közötti összefüggést `\|/` karakterekkel szimbolizálja.
+
+A formátumban használt rövidítések:
+
+* `%h` - rövidített commit hash,
+* `%ar` - commit ideje, relatívan a parancs kiadásához viszonyítva,
+* `%s` - a commit üzenete,
+* `%an` - szerző neve,
+* `%d` - branchek, HEAD megjelenítése.
+
+Ilyen hosszú parancs ritkán megjegyzendő, a konfigurációs fájlba el lehet menteni új parancsként:
+`nano ~/.gitconfig`
+
+```txt
+[alias]
+lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+```
+
+Ezután használható a `git lg1` parancs ugyanazzal az eredménnyel, amit az előző kódrészlet mutatott be.
+
+Ha tudjuk a keresendő commit szövegét, pl a parser modul módosításakor a `[parser]` prefix odakerül minden commit message elejére, akkor kereshetünk erre a szóra: `git log --grep parser`.
+
+Ha csak egy bizonyos fájl módosításait tartalmazó commitokat szeretnénk látni, akkor pedig a `git log -- path/to/file` használható.
+
+## Visszavonás
+
 TODO.
