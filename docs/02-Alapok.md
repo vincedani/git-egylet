@@ -230,18 +230,18 @@ index 7e1cba4..8a8488b 100644
 
 Két változtatás van és az elsőt dönthetjük el most, a releváns választások:
 
-* y: módosítás hozzáadása,
-* n: módosítás mellőzése,
-* q: kilépés, az eddig végrehajtott hozzáadások megmaradnak,
-* a: módosítás és minden ami következik hozzáadása,
-* d: módosítás és minden ami következik mellőzése,
-* g: módosítás választása,
-* j: módosítás döntés nélkül hagyása, és a következő el nem döntöttre ugrás,
-* J: módosítás döntés nélkül hagyása, és a következőre ugrás,
-* k: módosítás döntés nélkül hagyása, és az előző el nem döntöttre ugrás,
-* K: módosítás döntés nélkül hagyása, és az előzőre ugrás,
-* s: jelenlegi módosítás kisebb darabokra tördelése,
-* ?: help kiíratása
+* `y`: módosítás hozzáadása,
+* `n`: módosítás mellőzése,
+* `q`: kilépés, az eddig végrehajtott hozzáadások megmaradnak,
+* `a`: módosítás és minden ami következik hozzáadása,
+* `d`: módosítás és minden ami következik mellőzése,
+* `g`: módosítás választása,
+* `j`: módosítás döntés nélkül hagyása, és a következő el nem döntöttre ugrás,
+* `J`: módosítás döntés nélkül hagyása, és a következőre ugrás,
+* `k`: módosítás döntés nélkül hagyása, és az előző el nem döntöttre ugrás,
+* `K`: módosítás döntés nélkül hagyása, és az előzőre ugrás,
+* `s`: jelenlegi módosítás kisebb darabokra tördelése,
+* `?`: help kiíratása
 
 A többi opcióhoz a `man git add` ad részletes leírást.
 Válasszuk ki az `y`-t az "Negyedik sor."-hoz, majd `n`-t a "Tizennegyedik sor."-hoz.
@@ -357,4 +357,7 @@ Ha csak egy bizonyos fájl módosításait tartalmazó commitokat szeretnénk l�
 
 ## Visszavonás
 
-TODO.
+Amennyiben változtattunk egy fájlt és vissza szeretnénk állítani a legutolsó commit állapotára, akkor a következő megoldással élhetünk: `git restore [--staged] <file>...`.
+Ahogyan a `status` üzenete is mutatja, ha hozzá van adva a fájl, akkor a `restore --staged 01-pelda.txt` `unstaged` állapotra változtatja az állapotát, és ezután a `restore 01-pelda.txt` pedig visszaállítja az utolsó commit állapotára.
+
+Ha egy fájlt létrehoztunk a repositoryban, de még nem volt becommitálva, akkor `rm <file>` is megfelelő annak eltávolítására.
