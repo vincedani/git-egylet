@@ -333,7 +333,7 @@ A `dev` branchből leágaznak a fejlesztők különböző `topic`okat megvalós�
 
 Ehhez a folyamathoz legtöbbször társul egy CI/CD, mely sikeres lefutása esetén történhet meg a merge.
 
-| ![Git Flow: [Git Graph]](img/04-git-flow.PNG) |
+| ![Git Flow: [Git Graph]](img/04-git-flow.png) |
 |:--:|
 | *Git Flow. Forrás: [Medium](https://medium.com/devsondevs/gitflow-workflow-continuous-integration-continuous-delivery-7f4643abb64f)* |****
 
