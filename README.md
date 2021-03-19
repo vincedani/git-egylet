@@ -12,6 +12,14 @@ A leírásokban található példák *Ubuntu 20.04* operációs rendszeren volta
 Az Ubuntu terminálon kívül az egyetlen felhasznált eszköz a Visual Studio Code ([link](https://code.visualstudio.com/)) és annak bővítményei.
 Minden eszköz a használata előtt kerül bemutatásra.
 
+## Fejezetek
+
+1. [Motiváció](docs/00-Motiváció)
+2. [Első lépések](docs/01-Első-Lépések)
+3. [Alapok](docs/02-Alapok)
+4. [Távoli repository kezelése](docs/03-Távoli-repository)
+5. [Branch menedzsment](docs/04-Branch-menedzsment)
+
 ## Felhasznált források
 
 1. ScottChacon and Ben Straub. 2014. Pro Git (2nd. ed.). Apress, USA.
