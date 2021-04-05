@@ -143,7 +143,7 @@ A `master` branchen lévő "Ötödik commit.", illetve a `test_branch`-en lévő
 
 | ![Elágazott history: [Git Graph]](img/04-elagazas.PNG) |
 |:--:|
-| *Elágazott history állapota. Forrás: [Git Graph]* |****
+| *Elágazott history állapota. Forrás: [Git Graph]* |
 
 Az ábrán félkövérrel van kiemelve az az állapot, melyre a `HEAD` mutat.
 
@@ -216,7 +216,7 @@ A commit szövege már ki lett töltve automatikusan.
 
 | ![Merge commit: [Git Graph]](img/04-merge-commit.PNG) |
 |:--:|
-| *Merge commit. Forrás: [Git Graph]* |****
+| *Merge commit. Forrás: [Git Graph]* |
 
 Létrejött egy új commit a `masteren`, a `test_branch` ott maradt, ahol eddig volt.
 
@@ -224,7 +224,7 @@ A merge egy másik módja a `fast forward` merge, mely esetén nincs olyan elág
 
 | ![Fast forward merge: [Git Graph]](img/04-ff-merge.PNG) |
 |:--:|
-| *Fast forward merge. Forrás: [Git Graph]* |****
+| *Fast forward merge. Forrás: [Git Graph]* |
 
 Jelen állapotban egy `fast forward` merge hajtható végre:
 
@@ -254,7 +254,7 @@ Rebase esetén nincs új, harmadik merge commit, hanem az ágat teljes mértékb
 
 | ![Elágazott history állapota: [Git Graph]](img/04-rebase.PNG) |
 |:--:|
-| *Elágazott history állapota: [Git Graph]* |****
+| *Elágazott history állapota: [Git Graph]* |
 
 Ugyanaz a végeredmény kellene, mint a merge esetében: a master branchen ott legyen a "Hetedik commit." és a "Nyolcadig commit." is, viszont egy plusz merge commit nélkül.
 
@@ -275,7 +275,7 @@ Ha a merge előtt mindig alkalmazzuk a rebase-t, akkor a history lineáris marad
 
 | ![Rebaselt elágazás: [Git Graph]](img/04-rebased.PNG) |
 |:--:|
-| *Rebaselt elágazás: [Git Graph]* |****
+| *Rebaselt elágazás: [Git Graph]* |
 
 Rebase során az eredeti commit elvész és egy megegyező tartalmú jön létre máshol, így kellemetlenségeket okozhat ha mások a rebaselt commitra dolgoztak.
 
@@ -287,7 +287,7 @@ Ezt interaktív rebase használatával tehetjük meg.
 
 | ![Interaktív rebase: [Git Graph]](img/04-interactive-rebase.PNG) |
 |:--:|
-| *Interaktív rebase: [Git Graph]* |****
+| *Interaktív rebase: [Git Graph]* |
 
 A "9. commit." elnevezésű commit nem kell, viszont a 10. igen, a 11. commit után.
 
@@ -302,7 +302,7 @@ A parancsok után a history a következő, a kidobott commit nélkül.
 
 | ![Interaktív rebase után: [Git Graph]](img/04-interactive-rebased.PNG) |
 |:--:|
-| *Interaktív rebase után: [Git Graph]* |****
+| *Interaktív rebase után: [Git Graph]* |
 
 A fájlba beleírt `drop` és `pick` a következő lehetőségek közül került kiválasztásra, attól függően (a kapcsolólista nem teljes, a gyakran alkalmazott opciókat tartalmazza):
 
@@ -319,7 +319,7 @@ Ezzel a módszerrel, a legelső commitot nem lehet megváltoztatni, ahhoz a `--r
 
 | ![A legelső commit rebaselése: [Git Graph]](img/04-rebase-root.PNG) |
 |:--:|
-| *A legelső commit rebaselése: [Git Graph]* |****
+| *A legelső commit rebaselése: [Git Graph]* |
 
 ## Git Flow
 
@@ -335,7 +335,7 @@ Ehhez a folyamathoz legtöbbször társul egy CI/CD, mely sikeres lefutása eset
 
 | ![Git Flow: [Git Graph]](img/04-git-flow.png) |
 |:--:|
-| *Git Flow. Forrás: [Medium](https://medium.com/devsondevs/gitflow-workflow-continuous-integration-continuous-delivery-7f4643abb64f)* |****
+| *Git Flow. Forrás: [Medium](https://medium.com/devsondevs/gitflow-workflow-continuous-integration-continuous-delivery-7f4643abb64f)* |
 
 ## Távoli branchek
 
@@ -376,7 +376,7 @@ Vizsgáljuk meg azt az állapotot, amikor egy kollégám felpusholta a munkájá
 
 | ![Elagazott remote: [Git Graph]](img/04-elagazott-remote.PNG) |
 |:--:|
-| *Elágazott remote. Forrás: [Git Graph]* |****
+| *Elágazott remote. Forrás: [Git Graph]* |
 
 Hogy mindkettőnk munkája megmaradjon, a `pull origin master --rebase` parancs segíthet.
 
@@ -405,7 +405,7 @@ A conflict megoldása után `git rebase --continue` parancs segítségével befe
 
 | ![Elagazott remote pullolva: [Git Graph]](img/04-elagazott-remote-pull.PNG) |
 |:--:|
-| *Elágazott remote pullolva. Forrás: [Git Graph]* |****
+| *Elágazott remote pullolva. Forrás: [Git Graph]* |
 
 **Távoli branch követése.**
 Ha egy, csak a távoli repositoryn létező branchet szeretnénk követni a lokális repositoryban, akkor kapcsolatot kell kialakítani a két branch között (mint amilyen a master -- origin/master között van).

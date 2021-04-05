@@ -10,7 +10,7 @@ Az állapotokkal összhangban három különböző szekciót különböztetünk 
 
 | ![Állapotok. Forrás: [1]](img/02-szekciok.PNG) |
 |:--:|
-| *Állapotok. Forrás: [1]* |****
+| *Állapotok. Forrás: [1]* |
 
 A módosult fájlokat -- amik `modified` állapotban vannak -- a `working directory` tartalmazza.
 Ezek a `stage` hatására (később) átkerülnek a `staging area`-ba, majd a `commit` hatására (szintén később) bekerül a repositoryba.

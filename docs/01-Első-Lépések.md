@@ -18,7 +18,7 @@ Amennyiben a központi szerver elérhetetlenné válik bármilyen oknál fogva, 
 
 | ![Elosztott verziókezelő. Forrás: [1]](img/01-elosztott-verziokezelo.PNG) |
 |:--:|
-| *Elosztott verzőkezelő. Forrás: [1]* |****
+| *Elosztott verzőkezelő. Forrás: [1]* |
 
 ## Mi az a Git?
 
@@ -36,7 +36,7 @@ A megoldás miatt viszont a jelenlegi állapot meghatározásához szükség van
 
 | ![Változások tárolása az idő folyamán. Forrás: [1]](img/01-adattarolas.PNG) |
 |:--:|
-| *Változások tárolása az idő folyamán. Forrás: [1]* |****
+| *Változások tárolása az idő folyamán. Forrás: [1]* |
 
 Jelen példában a `1. verziónál` hozzáadásra került három fájl (A, B, C).
 A `2. verzió` két fájlt módosított, ami A1-el és C1-el van jelölve, viszont a B nem változott (referencia az előző verzióra).
