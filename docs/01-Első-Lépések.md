@@ -18,7 +18,7 @@ Amennyiben a központi szerver elérhetetlenné válik bármilyen oknál fogva, 
 
 | ![Elosztott verziókezelő. Forrás: [1]](img/01-elosztott-verziokezelo.PNG) |
 |:--:|
-| *Elosztott verzőkezelő. Forrás: [1]* |
+| *Elosztott verziókezelő. Forrás: [1]* |
 
 ## Mi az a Git?
 
