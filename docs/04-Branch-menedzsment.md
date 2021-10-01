@@ -500,7 +500,7 @@ Egy új fájl hozzáadása esetében, amely még nem a repository része, a `sta
 ### Clean állapot létrehozása
 
 A `stash` segítségével lementettük a lementeni való félkész munkát, viszont ha maradt még `untracked` fájl, a repository még mindig tartalmaz változásokat, így nehéz lesz mozogni branchek között.
-A probléma megoldására szolgál a `git clean`, mely megtisztítja a repositoryt mindennemű `untracked` fájltól.
+A probléma megoldására szolgál a `git clean`, mely megtisztítja a repositoryt mindennemű `untracked` fájltól, az aktuális könyvtárból rekurzívan.
 
 A `clean` a `-f` (force) kapcsoló nélkül nem csinál semmit, viszont ha először meg szeretnénk tudni, hogy "mit csinálna", megadható neki a `--dry-run` kapcsoló.
 Ennek hatására kiírja a konzolra, hogy mit törölne, de nem teszi meg.
@@ -512,3 +512,13 @@ Would remove 03-pelda.txt
 $ git clean --force
 Removing 03-pelda.txt
 ```
+
+A `clean` alapvetően figyelmen kívül hagyja a `.gitignore` segítségével verziókövetésből kizárt fájlokat.
+Amennyiben ezektől mégis megszabadulnánk, akkor a `-x` kapcsolóval bevonhatjuk ezeket.
+A `-X` kapcsoló a kisbetűs változatával szemben, csak a `.gitignore` által meghatározott fájlokat érinti.
+Ez akkor lehet hasznos, ha egyéb létrehozott fájlokat (pl. log fájlok) nem szeretnénk törölni, viszont a build során létrejött fájloktól megszabadulnánk.
+
+Érdemes megjegyezni, hogy a nemkövetett könyvtárakat alapértelmezetten nem járja be a `clean`, ha mégis ezt szeretnénk, akkor a `-d` kapcsoló jöhet segítségünkre, amely hatására rekurzívan bejárja ezeket is.
+
+Zárásként, ha szeretnénk törölni a repository-ból az összes olyan fájlt, amely nem verziókövetett, azt a `git clean -dfx` parancs kiadásával tehetjük meg.
+Ez rekurzívan be fogja járni az aktuális könyvtártól kezdve az összes alkönyvtárat, és törli az összes *idegen* fájlt.
