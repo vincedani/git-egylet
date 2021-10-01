@@ -138,6 +138,9 @@ build
 *.yaml # Minden yaml kiterjesztésű fájl.
 ```
 
+Itt érdemes megjegyeznünk, hogy a lokális `.gitignore` az adott könyvtárban és annak alkönyvtárjaiban fejti ki hatását.
+Amennyiben csak egy adott könyvtáron belül szeretnénk korlátozni a verziókövetést, úgy elég abban a könyvtárban létrehozni a fájlt.
+Továbbá a `.gitignore` hatását felülbírálhatjuk, ha kézzel kiadjuk a `git add` parancsot a fájlra vonatkozóan.
 Jelen projekt `.gitignore` fájlja a dokumentum írása pillanatában:
 
 ```txt
