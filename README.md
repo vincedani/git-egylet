@@ -14,11 +14,11 @@ Minden eszköz a használata előtt kerül bemutatásra.
 
 ## Fejezetek
 
-1. [Motiváció](docs/00-Motiváció)
-2. [Első lépések](docs/01-Első-Lépések)
-3. [Alapok](docs/02-Alapok)
-4. [Távoli repository kezelése](docs/03-Távoli-repository)
-5. [Branch menedzsment](docs/04-Branch-menedzsment)
+1. [Motiváció](docs/00-Motiváció.md)
+2. [Első lépések](docs/01-Első-Lépések.md)
+3. [Alapok](docs/02-Alapok.md)
+4. [Távoli repository kezelése](docs/03-Távoli-repository.md)
+5. [Branch menedzsment](docs/04-Branch-menedzsment.md)
 
 ## Felhasznált források
 
