@@ -21,6 +21,10 @@ Minden eszköz a használata előtt kerül bemutatásra.
 5. [Branch menedzsment](docs/04-Branch-menedzsment.md)
 6. [Kontribúciós irányelvek](docs/05-Kontribucio.md)
 
+## Melléklet
+
+[Parancs jegyzék](docs/Parancs-jegyzék.md)
+
 ## Felhasznált források
 
 1. ScottChacon and Ben Straub. 2014. Pro Git (2nd. ed.). Apress, USA.
