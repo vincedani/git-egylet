@@ -75,6 +75,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Az látható, hogy az aktuális branch a `master`, még nincsenek commitok és van egy `untracked` fájl.
 
+Érdemes megjegyezni az olvasó számára, hogy a `master`, vagyis a fő fejlesztési ág, csupán logikai definícó, a git szempontjából nem kitüntetett.
+A `master` elenevezés használatára az iparágban terjedő trend a `main` elnevezés (lásd github).
+Mi a `git` által jelenleg alapértelmezettnek használt `master`-ként hivatkozunk a továbbiakban erre.
+
 ## Commitok
 
 Ahhoz, hogy a `01-pelda.txt` a `staging area`-ba kerüljön, vagy a status szerinti `tracked files` kategóriába, hozzá kell adni.
