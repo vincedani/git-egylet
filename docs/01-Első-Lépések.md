@@ -1,6 +1,6 @@
 # Előkészületek
 
-A veziókezelő (*Version Control System -- VCS*) egy szoftverrendszer, amely rögzíti a változásokat fájlokon az idő folyamán.
+A verziókezelő (*Version Control System -- VCS*) egy szoftverrendszer, amely rögzíti a változásokat a fájlokon az idő folyamán.
 Programozói szemszögből ezek a fájlok programkódot tartalmaznak, de kb. *mindent is* lehet kezelni.
 Minden változtatás az előző állapothoz képest kerül meghatározásra inkrementálisan, így könnyű az állapotok között váltani, visszavonni egy vagy több változtatást.
 
@@ -104,7 +104,7 @@ $ git config --global user.name "Felhasználó Név"
 $ git config --global user.email email@cím.hu
 ```
 
-Minden commit-nak van egy szerzője, amit a kommitolás pillanatában a konfigurációs fájlból nyer ki a rendszer.
+Minden commit-nak van egy szerzője, amit a commitolás pillanatában a konfigurációs fájlból nyer ki a rendszer.
 
 ### Preferált szövegszerkesztő
 
@@ -125,7 +125,7 @@ A forrást igen, viszont a binárist egyáltalán nem szeretnénk verziókezelni
 Ezen okoknál fogva meg szeretnénk mondani a Git-nek, hogy ezt a fájlt ne vegye figyelembe.
 
 Erre szolgál a `.gitignore` fájl, ami szintén lehet globális (`~/.gitignore`) vagy lokális, a projekthez kapcsolódó.
-A projekthez kapcsolódó ignore fájlt be kell kommitálni.
+A projekthez kapcsolódó ignore fájlt be kell commitálni.
 
 Példák.
 
@@ -151,4 +151,4 @@ Jelen projekt `.gitignore` fájlja a dokumentum írása pillanatában:
 Miért?
 A `pandoc` eszközzel Markdown formátumból PDF-et tudok előállítani, így mindennemű pdf-et nem szeretnék megtartani (ugyanazon indoknál fogva, mint az `a.out`).
 A különböző eszmefuttatásaimat pedig `txt` fájlokba írom bele mielőtt a feledés homálya szállna rájuk.
-Azokat sem szeretném kommitálni mielőtt kiforrott gondolat lesz belőlük.
+Azokat sem szeretném commitálni mielőtt kiforrott gondolat lesz belőlük.

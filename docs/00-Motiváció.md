@@ -26,7 +26,7 @@ Nem tudom kijavítani a régi verziót, mert a kód abban a formában *nincs meg
 Abban az esetben, ha történelmet vezetünk a kód evolúciójáról, akkor az ilyen felmerülő problémákkal könnyebben megküzdhetünk.
 Az imént említett időközönkénti kódállapot mentésénél egy hatékonyabb módszer lehet, ha csak a változást mentjük mindig el.
 Például van egy 100 soros fájl, változtattam benne 2 sort.
-Ezesetben az esetben elég tárhelypazarló módszernek tűnik, ha minden snapshot esetén 100 sort mentünk, ennél jobb megoldásnak tűnhet ha csak a változást mentjük el.
+Ebben az esetben elég tárhelypazarló módszernek tűnik, ha minden snapshot esetén 100 sort mentünk, ennél jobb megoldásnak tűnhet ha csak a változást mentjük el.
 Ezzel tárhelyet spórolhatunk.
 
 Ezt a változás-menedzsmentet tudják jól kezelni a mai verziókezelő szoftverek, amilyen a Git is.

@@ -518,7 +518,7 @@ Amennyiben ezektől mégis megszabadulnánk, akkor a `-x` kapcsolóval bevonhatj
 A `-X` kapcsoló a kisbetűs változatával szemben, csak a `.gitignore` által meghatározott fájlokat érinti.
 Ez akkor lehet hasznos, ha egyéb létrehozott fájlokat (pl. log fájlok) nem szeretnénk törölni, viszont a build során létrejött fájloktól megszabadulnánk.
 
-Érdemes megjegyezni, hogy a nemkövetett könyvtárakat alapértelmezetten nem járja be a `clean`, ha mégis ezt szeretnénk, akkor a `-d` kapcsoló jöhet segítségünkre, amely hatására rekurzívan bejárja ezeket is.
+Érdemes megjegyezni, hogy a nem követett könyvtárakat alapértelmezetten nem járja be a `clean`, ha mégis ezt szeretnénk, akkor a `-d` kapcsoló jöhet segítségünkre, amely hatására rekurzívan bejárja ezeket is.
 
 Zárásként, ha szeretnénk törölni a repository-ból az összes olyan fájlt, amely nem verziókövetett, azt a `git clean -dfx` parancs kiadásával tehetjük meg.
 Ez rekurzívan be fogja járni az aktuális könyvtártól kezdve az összes alkönyvtárat, és törli az összes *idegen* fájlt.
