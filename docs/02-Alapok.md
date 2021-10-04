@@ -117,7 +117,7 @@ Amennyiben tudjuk, hogy csak egy egyszerű, egysoros üzenetet szeretnénk hagyn
 ### Elrontottam?
 
 Felmerülhet a kérdés, hogy mi van ha elrontottam a commitot?
-Egyel több fájl került bele, vagy egyel kevesebb?
+Eggyel több fájl került bele, vagy eggyel kevesebb?
 Olyan változtatás is belekerült ami még nincs kész teljesen, ez akkor már ott marad?
 
 A bevezetőben el lett mesélve, hogy a Git csak hozzáad információt, el sosem vesz, akkor most a bénaságomat mindenki látni fogja?
@@ -136,7 +136,7 @@ Date:   Thu Feb 11 19:32:16 2021 +0100
     Első commit.
 ```
 
-Van egy hash, ami azonosítja az egységet, van neki egy szezője és egy időpont amikor elkészült.
+Van egy hash, ami azonosítja az egységet, van neki egy szerzője és egy időpont amikor elkészült.
 
 Kiderült, hogy a 7. és a 9. sor közé egy felesleges sortörés ékelődött, így néz most ki a szöveg:
 
