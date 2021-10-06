@@ -1,23 +1,23 @@
-# Prancs jegyzék
+# Parancs jegyzék
 
 Az alábbi oldal az eddig áttekintett git parancsok rövid leírását, linket az érintett szekcióra és linket a hivatalos dokumentációra tartalmaz.
 
-* [Add](#Add)
-* [Branch](#Branch)
-* [Checkout](#Checkout)
-* [Clean](#Clean)
-* [Commit](#Commit)
-* [Config](#Config)
-* [Fetch](#Fetch)
-* [Init](#Init)
-* [Log](#Log)
-* [Merge](#Merge)
-* [Pull](#Pull)
-* [Push](#Push)
-* [Rebase](#Rebase)
-* [Remote](#Remote)
-* [Stash](#Stash)
-* [Status](#Status)
+* [Add](#add)
+* [Branch](#branch)
+* [Checkout](#checkout)
+* [Clean](#clean)
+* [Commit](#commit)
+* [Config](#config)
+* [Fetch](#fetch)
+* [Init](#init)
+* [Log](#log)
+* [Merge](#merge)
+* [Pull](#pull)
+* [Push](#push)
+* [Rebase](#rebase)
+* [Remote](#remote)
+* [Stash](#stash)
+* [Status](#status)
 
 ## Git parancsok
 
@@ -38,7 +38,7 @@ Hivatalos leírás [itt](https://git-scm.com/docs/git-branch) található.
 ### Checkout
 A `git checkout` branchek közötti váltásra vagy a branch változtatásainak visszaállítására jó.
 
-A [Branch menedzsment](04-Branch-menedzsment.md#Váltás) fejezetben ismerkedtünk meg vele.
+A [Branch menedzsment](04-Branch-menedzsment.md#váltás) fejezetben ismerkedtünk meg vele.
 
 Hivatalos leírás [itt](https://git-scm.com/docs/git-checkout) található.
 
@@ -59,7 +59,7 @@ Hivatalos leírás [itt](https://git-scm.com/docs/git-commit) található.
 ### Config
 A `git config` a Konfiguráció lekérdezésére és beállítására használható.
 
-Az [Első lépések](docs/01-Első-Lépések.md#Konfiguráció) fejezetben ismerkedtünk meg vele.
+Az [Első lépések](01-Első-Lépések.md#konfiguráció) fejezetben ismerkedtünk meg vele.
 
 Hivatalos leírás [itt](https://git-scm.com/docs/git-config) található.
 
@@ -73,7 +73,7 @@ Hivatalos leírás [itt](https://git-scm.com/docs/git-fetch) található.
 ### Init
 A `git init` új repository létrehozására szolgál.
 
-Az [Alapok](02-Alapok.md#Init) fejezetben ismerkedtünk meg vele.
+Az [Alapok](02-Alapok.md#init) fejezetben ismerkedtünk meg vele.
 
 Hivatalos leírás [itt](https://git-scm.com/docs/git-init) található.
 
@@ -87,7 +87,7 @@ Hivatalos leírás [itt](https://git-scm.com/docs/git-log) található.
 ### Merge
 A `git merge` fejlesztési ágak összevonására alkalmas.
 
-A [Branch menedzsment](04-Branch-menedzsment.md#Merge) fejezetben ismerkedtünk meg vele.
+A [Branch menedzsment](04-Branch-menedzsment.md#merge) fejezetben ismerkedtünk meg vele.
 
 Hivatalos leírás [itt](https://git-scm.com/docs/git-merge) található.
 
@@ -123,7 +123,7 @@ Hivatalos leírás [itt](https://git-scm.com/docs/git-push) található.
 ### Rebase
 A `git rebase` a branch commitjait a másik branchre egyessével alkalmazza.
 
-A [Branch menedzsment](04-Branch-menedzsment.md#Rebase) fejezetben ismerkedtünk meg vele.
+A [Branch menedzsment](04-Branch-menedzsment.md#rebase) fejezetben ismerkedtünk meg vele.
 
 Hivatalos leírás [itt](https://git-scm.com/docs/git-rebase) található.
 
