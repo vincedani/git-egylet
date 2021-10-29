@@ -20,6 +20,7 @@ Minden eszköz a használata előtt kerül bemutatásra.
 4. [Távoli repository kezelése](docs/03-Távoli-repository.md)
 5. [Branch menedzsment](docs/04-Branch-menedzsment.md)
 6. [Kontribúciós irányelvek](docs/05-Kontribucio.md)
+7. [Érdekességek](docs/06-Erdekessegek.md)
 
 ## Melléklet
 
