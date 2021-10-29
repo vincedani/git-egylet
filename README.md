@@ -30,3 +30,4 @@ Minden eszköz a használata előtt kerül bemutatásra.
 
 1. ScottChacon and Ben Straub. 2014. Pro Git (2nd. ed.). Apress, USA.
 2. Learn Git Branching, [link](https://learngitbranching.js.org/).
+3. Tig: text-mode interface for Git, [link](http://jonas.github.io/tig/)
